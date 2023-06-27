@@ -1,0 +1,70 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  background-image: url("../img/coffee-beans.png");
+  background-repeat: no-repeat;
+  background-size: 500px;
+  background-position: 20% -2%;
+}
+
+#foot1 {
+  background-image: url("../img/coffee-beans\ \(1\).png");
+  background-repeat: repeat-x;
+  background-size: 200px;
+  background-position: center;
+}
+
+@media (max-width: 768px) {
+  body {
+    background-image: none;
+  }
+}
+
+/* Hamburger*/
+.hamburger {
+  cursor: pointer;
+  position: relative;
+  width: 24px;
+  height: 24px;
+  transition: all 0.3s;
+}
+
+.hamburger-top,
+.hamburger-mid,
+.hamburger-bot {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 24px;
+  height: 2px;
+  background: #693829;
+  transform: rotate(0);
+  transition: all 0.5s;
+}
+
+.hamburger-mid {
+  transform: translateY(8px);
+}
+
+.hamburger-bot {
+  transform: translateY(16px);
+}
+
+.open {
+  transform: rotate(90deg);
+  transform: translateY(0px);
+}
+
+.open .hamburger-top {
+  transform: rotate(45deg) translateY(6px) translate(6px);
+}
+
+.open .hamburger-mid {
+  display: none;
+}
+
+.open .hamburger-bot {
+  transform: rotate(-45deg) translateY(6px) translate(-6px);
+}

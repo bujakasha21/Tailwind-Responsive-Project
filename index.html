@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/main.css" />
+    <title>All About Coffee!</title>
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="relative container mx-auto p-6">
+      <!--Flex container-->
+      <div class="flex items-center justify-between">
+        <!--Logo-->
+        <div class="pt-2">
+          <img class="w-32 rounded-full" src="/img/logo.jpg" alt="logo" />
+        </div>
+        <!--Menu items-->
+        <div class="hidden space-x-6 md:flex">
+          <a href="#" class="hover:text-darkGrayishBlue">Pricing</a>
+          <a href="#" class="hover:text-darkGrayishBlue">Products</a>
+          <a href="#" class="hover:text-darkGrayishBlue">About Us</a>
+          <a href="#" class="hover:text-darkGrayishBlue">Community</a>
+        </div>
+        <!--Button-->
+        <a
+          href="#"
+          class="hidden p-3 px-6 pt-2 text-white bg-brightBrown rounded-full baseline hover:bg-hoverBrown md:block"
+          >Order a Coffe!</a
+        >
+
+        <!--Hamburger Menu-->
+        <button
+          id="menu-btn"
+          class="block hamburger md:hidden focus:outline-none"
+        >
+          <span class="hamburger-top"></span>
+          <span class="hamburger-mid"></span>
+          <span class="hamburger-bot"></span>
+        </button>
+      </div>
+      <!--Mobile menu-->
+      <div class="md:hidden">
+        <div
+          id="menu"
+          class="absolute flex-col items-center hidden self-end py-12 mt-10 space-y-10 font-bold bg-white sm:w-auto sm:self-center left-6 right-6 drop-shadow-md"
+        >
+          <a href="#">Pricing</a>
+          <a href="#">Products</a>
+          <a href="#">About Us</a>
+          <a href="#">Community</a>
+        </div>
+      </div>
+    </nav>
+    <!--Hero Section-->
+    <section id="hero">
+      <!--Flex Container-->
+      <div
+        class="container flex flex-col-reverse items-center px-6 mx-auto mt-10 space-y-0 md:space-y-0 md:flex-row"
+      >
+        <!--Left Item-->
+        <div class="flex flex-col mb-32 space-y-12 md:w-1/2">
+          <h1
+            class="max-w-md text-4xl font-bold text-center md:text-5xl md:text-left"
+          >
+            Lorem ipsum dolor sit amet consectetur.
+          </h1>
+          <p class="max-w-sm text-center text-darkGrayishBlue md:text-left">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias
+            exercitationem, ratione ipsam dolores recusandae cum fuga rem
+            facilis aut similique eveniet fugiat optio ullam facere.
+          </p>
+          <div class="flex justify-center md:justify-start">
+            <a
+              href="#"
+              class="p-3 px-6 pt-2 text-white bg-brightBrown rounded-full baseline hover:bg-hoverBrown"
+              >Let's Learn</a
+            >
+          </div>
+        </div>
+        <!--Right Item-->
+        <div class="md:w-1/2">
+          <img class="mt-0" src="/img/coffee.jpg" alt="img" />
+        </div>
+      </div>
+    </section>
+    <!--Features-->
+    <section id="features">
+      <!--Flex Container-->
+      <div
+        class="container flex flex-col px-4 mx-auto mt-10 space-y-12 md:space-y-0 md:flex-row"
+      >
+        <!--Facts-->
+        <div class="flex flex-col space-y-12 md:w-1/2">
+          <h2 class="max-w-md text-4xl font-bold text-center md:text-left">
+            Interesting Facts
+          </h2>
+          <p class="max-w-sm text-center text-darkGrayishBlue md:text-left">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias
+            exercitationem, ratione ipsam dolores recusandae cum.
+          </p>
+        </div>
+        <!--List-->
+        <div class="flex flex-col space-y-8 md:w-1/2">
+          <!--List item 1-->
+          <div
+            class="flex flex-col space-y-3 md:space-y-0 md:space-x-6 md:flex-row"
+          >
+            <!--Fact 1-->
+            <div class="rounded-l-full bg-brightBrownLight md:bg-transparent">
+              <div class="flex items-center space-x-2">
+                <div
+                  class="px-4 py-2 text-white rounded-full md:py-1 bg-brightBrown"
+                >
+                  01
+                </div>
+                <h3 class="text-base font-bold md:mb-4 md:hidden">
+                  Coffee is actually a fruit
+                </h3>
+              </div>
+            </div>
+            <div>
+              <h3 class="hidden mb-4 text-lg font-bold md:block">
+                Coffee is actually a fruit
+              </h3>
+              <p class="text-darkGrayishBlue">
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                Eveniet doloremque soluta mollitia, vitae animi voluptates quis
+                deserunt ab tenetur modi, repudiandae dolorem minus!
+              </p>
+            </div>
+          </div>
+          <!--List item 2-->
+          <div
+            class="flex flex-col space-y-3 md:space-y-0 md:space-x-6 md:flex-row"
+          >
+            <!--Fact 2-->
+            <div class="rounded-l-full bg-brightBrownLight md:bg-transparent">
+              <div class="flex items-center space-x-2">
+                <div
+                  class="px-4 py-2 text-white rounded-full md:py-1 bg-brightBrown"
+                >
+                  02
+                </div>
+                <h3 class="text-base font-bold md:mb-4 md:hidden">
+                  Bees love coffee
+                </h3>
+              </div>
+            </div>
+            <div>
+              <h3 class="hidden mb-4 text-lg font-bold md:block">
+                Coffee shops boost your creativity
+              </h3>
+              <p class="text-darkGrayishBlue">
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                Eveniet doloremque soluta mollitia, vitae animi voluptates quis
+                deserunt ab tenetur modi, repudiandae dolorem minus!
+              </p>
+            </div>
+          </div>
+          <!--List item 3-->
+          <div
+            class="flex flex-col space-y-3 md:space-y-0 md:space-x-6 md:flex-row"
+          >
+            <!--Fact 3-->
+            <div class="rounded-l-full bg-brightBrownLight md:bg-transparent">
+              <div class="flex items-center space-x-2">
+                <div
+                  class="px-4 py-2 text-white rounded-full md:py-1 bg-brightBrown"
+                >
+                  03
+                </div>
+                <h3 class="text-base font-bold md:mb-4 md:hidden">
+                  Coffee is actually a fruit
+                </h3>
+              </div>
+            </div>
+            <div>
+              <h3 class="hidden mb-4 text-lg font-bold md:block">
+                Coffee is actually a fruit
+              </h3>
+              <p class="text-darkGrayishBlue">
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                Eveniet doloremque soluta mollitia, vitae animi voluptates quis
+                deserunt ab tenetur modi, repudiandae dolorem minus!
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--Testimonials-->
+    <section id="testimonials">
+      <!--Container-->
+      <div class="max-w-6xl px-5 mx-auto mt-32 text-center">
+        <!--Heading-->
+        <h2 class="text-4xl font-bold text-center">What people think?</h2>
+        <!--Testimonials cont-->
+        <div class="flex flex-col mt-24 md:flex-row md:space-x-6">
+          <!--Testimonial 1-->
+          <div
+            class="flex flex-col items-center p-6 space-y-6 rounded-lg bg-brightBrownLight md:w-1/3"
+          >
+            <img
+              src="/img/person1.jpg"
+              class="w-20 -mt-14 rounded-full"
+              alt="person1"
+            />
+            <h5 class="text-lg font-bold">Joanna L.</h5>
+            <p class="text-sm text-darkGrayishBlue">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis
+              nisi beatae, numquam excepturi architecto perspiciatis quam
+              reprehenderit, ipsum rem voluptatibus inventore harum quae
+              deserunt magni voluptatem veniam ad delectus ullam.
+            </p>
+          </div>
+          <!--Testimonial 2-->
+          <div
+            class="hidden flex-col items-center p-6 space-y-6 rounded-lg bg-brightBrownLight md:flex md:w-1/3"
+          >
+            <img
+              src="/img/person2.png"
+              class="w-20 -mt-14 rounded-full"
+              alt="person2"
+            />
+            <h5 class="text-lg font-bold">Connor M.</h5>
+            <p class="text-sm text-darkGrayishBlue">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis
+              nisi beatae, numquam excepturi architecto perspiciatis quam
+              reprehenderit, ipsum rem voluptatibus inventore harum quae
+              deserunt magni voluptatem veniam ad delectus ullam.
+            </p>
+          </div>
+          <!--Testimonial 3-->
+          <div
+            class="hidden flex-col items-center p-6 space-y-6 rounded-lg bg-brightBrownLight md:flex md:w-1/3"
+          >
+            <img
+              src="/img/person3.png"
+              class="w-20 -mt-14 rounded-full"
+              alt="person3"
+            />
+            <h5 class="text-lg font-bold">Joanna L.</h5>
+            <p class="text-sm text-darkGrayishBlue">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis
+              nisi beatae, numquam excepturi architecto perspiciatis quam
+              reprehenderit, ipsum rem voluptatibus inventore harum quae
+              deserunt magni voluptatem veniam ad delectus ullam.
+            </p>
+          </div>
+        </div>
+        <!--button-->
+        <div class="my-16">
+          <a
+            href="#"
+            class="p-3 px-6 pt-2 text-white bg-brightBrown rounded-full baseline hover:bg-hoverBrown"
+            >Your Opinon?</a
+          >
+        </div>
+      </div>
+    </section>
+    <!--Footer1-->
+    <section id="foot1" class="bg-brightBrown">
+      <!--Flex Container-->
+      <div
+        class="container flex flex-col items-center justify-between px-6 py-24 mx-auto space-y-12 md:flex-row md:space-y-0"
+      >
+        <!--h2-->
+        <h2
+          class="text-4xl font-bold leading-tight text-center text-white md:text-4xl md:max-2-xl md:text-left"
+        >
+          Do you enjoy drinking coffe with your friends?
+        </h2>
+        <!--button-->
+        <a
+          href="#"
+          class="p-3 px-6 pt-2 text-brightBrown bg-white rounded-full shadow-2xl baseline hover:bg-hoverBrown"
+          >Answer it</a
+        >
+      </div>
+    </section>
+    <!--Footer 2-->
+    <footer id="foot2" class="bg-brightBrownLight">
+      <div
+        class="container flex flex-col-reverse justify-between px-6 py-10 mx-auto space-y-8 md:flex-row md:space-y-0"
+      >
+        <!--Logo and Links-->
+        <div
+          class="flex flex-col-reverse items-center justify-between space-y-12 md:flex-col md:space-y-0 md:items-start"
+        >
+          <div class="mx-auto my-8 text-center text-brightBrown md:hidden">
+            Copyright &copy; 2023, All Rights Reserved
+          </div>
+          <!--Logo-->
+          <div class="pt-6">
+            <img class="w-32 rounded-full" src="/img/logo.jpg" alt="logo" />
+          </div>
+          <!--Links-->
+          <div class="flex justify-center space-x-4">
+            <!--Link1-->
+            <a href="#">
+              <img src="img/facebook (1).svg" class="h-8 mt-8" />
+            </a>
+            <!--Link2-->
+            <a href="#">
+              <img src="img/instagram.svg" class="h-8 mt-8" />
+            </a>
+            <!--Link3-->
+            <a href="#">
+              <img src="img/twitter.svg" class="h-8 mt-8" />
+            </a>
+            <!--Link4-->
+            <a href="#">
+              <img src="img/youtube.svg" class="h-8 mt-8" />
+            </a>
+          </div>
+        </div>
+        <!--Lists-->
+        <div class="flex justify-around space-x-32">
+          <div class="flex flex-col space-y-3 text-brightBrown">
+            <a href="#" class="hover:text-hoverBrown">Home</a>
+            <a href="#" class="hover:text-hoverBrown">Pricing</a>
+            <a href="#" class="hover:text-hoverBrown">Products</a>
+            <a href="#" class="hover:text-hoverBrown">About Us</a>
+          </div>
+          <div class="flex flex-col space-y-3 text-brightBrown">
+            <a href="#" class="hover:text-hoverBrown">Community</a>
+            <a href="#" class="hover:text-hoverBrown">Privacy Policy</a>
+          </div>
+        </div>
+        <!--Input-->
+        <div class="flex flex-col justify-between">
+          <form>
+            <div class="flex space-x-3">
+              <input
+                type="text"
+                class="flex-1 px-4 rounded-full focus:outline-none"
+                placeholder="Send Us An Email"
+              />
+              <button
+                class="button px-6 py-2 text-white rounded-full bg-brightBrown hover:bg-transparent hover:text-brightBrown hover:border hover:border-brightBrown focus:outline-none"
+              >
+                Send!
+              </button>
+            </div>
+          </form>
+          <div class="hidden text-brightBrown md:block">
+            Copyright &copy; 2023, All Rights Reserved
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="js/script.js"></script>
+  </body>
+</html>
